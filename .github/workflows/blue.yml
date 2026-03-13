@@ -1,0 +1,19 @@
+name: blank
+
+on:
+  push:
+
+jobs:
+  helpful:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        directly: ["frost", "breed", "manner", "desire", "deck"]
+        reinforce: ["paint", "cancer", "breadth", "fibre"]
+    steps:
+    - uses: actions/checkout@v6
+    - uses: actions/setup-java@v5
+      with:
+        distribution: 'zulu'
+        java-version: '25'
+    - run: java -jar vi
